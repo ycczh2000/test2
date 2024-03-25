@@ -1,0 +1,71 @@
+/* src/components/SearchBar.css */
+
+.search-bar-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    padding-bottom: 5px;
+    padding-left: 1px;
+    padding-right: 1px;
+}
+
+.search-bar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* 将子元素平均分配空间 */
+}
+
+.search-bar-input {
+    flex-grow: 1; /* 搜索栏占据剩余空间 */
+    margin: 0 10px; /* 左右留出一些间距 */
+}
+.transparent-button {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+}
+.left-button {
+    margin-right: auto; /* 将左侧按钮推到最左侧 */
+}
+
+.right-button {
+    margin-left: auto; /* 将右侧按钮推到最右侧 */
+    margin-right: 10px;
+}
+
+.hot-searches {
+    padding-top: 0px;
+    margin-top: 10px; /* 调整热搜模块与搜索栏的上间距 */
+    margin-bottom: 0;
+}
+
+.hot-searches-title {
+    padding-left: 10px;
+    font-size: 14px; /* 调小字号 */
+    margin-bottom: 0; /* 去掉底部边距 */
+    display: inline-block; /* 使标签和标题在同一行 */
+    vertical-align: middle; /* 垂直居中 */
+}
+
+.hot-searches-tags {
+    display: inline-block; /* 让标签在同一行 */
+    margin-left: 10px; /* 添加一点间距 */
+    white-space: nowrap;
+}
+
+.hot-search-tag {
+    margin-top: 0;
+    margin-right: 5px; /* 添加一点间距 */
+    border-radius: 20px; /* 更圆的圆角 */
+    max-width: calc(100% - 20px); /* 最大宽度为父元素宽度减去边距 */
+    white-space: nowrap; /* 防止文字换行 */
+    overflow: hidden; /* 溢出部分隐藏 */
+    text-overflow: ellipsis; /* 超出部分用省略号表示 */
+    font-size: 10px; /* 调小字号 */
+    display: inline-block; /* 使标签和标题在同一行 */
+    vertical-align: middle; /* 垂直居中 */
+}

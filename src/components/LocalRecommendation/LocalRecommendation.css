@@ -1,0 +1,77 @@
+/* src/components/LocalRecommendation.css */
+
+.local-recommendation-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.recommendation-header {
+    font-family: 'Arial Black', sans-serif; /* 使用艺术字体 */
+    font-size: 24px;
+    padding-bottom: 0px;
+    margin-bottom: 15px;
+}
+
+.recommendation-images {
+    display: flex;
+    flex-wrap: nowrap; /* 不换行 */
+    overflow-x: auto; /* 允许水平滚动 */
+    margin-left: -10px; /* 调整图片之间的间距 */
+}
+
+.recommendation-image-wrapper {
+    width: calc(100% / 3); /* 每个推荐项目宽度为容器的三分之一 */
+    flex: 0 0 auto; /* 禁止自动缩放 */
+    margin-right: 15px; /* 图片间距 */
+    position: relative;
+}
+
+.image-container {
+    width: 100%;
+    height: 0;
+    padding-top: 66.67%; /* 2:3 宽高比 */
+    overflow: hidden;
+}
+
+.recommendation-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 裁切并保持宽高比 */
+    border-radius: 10px; /* 圆角 */
+}
+
+.recommendation-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明的暗色背景 */
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 1; /* 确保标签在图片上方 */
+}
+
+.recommendation-title {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    z-index: 1; /* 确保标题在图片上方 */
+}
+
+.end-of-scroll {
+    width: 100%;
+    text-align: center;
+    color: #999;
+    margin-top: 10px;
+}

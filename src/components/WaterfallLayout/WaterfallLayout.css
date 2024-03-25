@@ -1,0 +1,32 @@
+/* src/components/WaterfallLayout.css */
+
+.waterfall-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* 让项目居中 */
+    margin: auto;
+    position:static;
+    margin-right: 0;
+}
+
+.waterfall-item {
+    width: calc(50% - 10px); /* 让每个项目占据容器宽度的50%，减去间隔 */
+    margin-right: 0%; /* 请注意，这里的margin-right为0%会使右边距为0，不会有间隔 */
+    margin-bottom: 5px; /* 添加下边距，形成间隔 */
+    padding: 0; 
+}
+
+
+.waterfall-item:nth-child(odd) {
+    margin-right: 5px; /* 将奇数项的右边距设置为自动，使其靠左 */
+    margin-left: 5px; /* 给奇数项添加左边距 */
+    padding-right: 0;
+    /* background-color: #fff0f0; /* 添加背景颜色进行调试 */
+    /* border: 1px solid red; 添加边框进行调试 */
+}
+
+.waterfall-item:nth-child(even) {
+    margin-left: 5px; /* 将偶数项的左边距设置为自动，使其靠右 */
+    margin-right: 5px; /* 给偶数项添加右边距 */
+    position:static;
+}
