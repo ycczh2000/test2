@@ -15,7 +15,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,17 +35,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-
-.footer {
-  height: 10vh;
-  background-color: #282c34;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-.app-container {
-  margin-bottom: 10vh;
 }
